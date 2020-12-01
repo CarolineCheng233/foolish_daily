@@ -10,7 +10,7 @@
 
 * #### cuda toolkit 与 cuda driver version的兼容性
 
-![cuda_version](sup\cuda_version.PNG)
+![cuda_version](sup/cuda_version.PNG)
 
 https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html
 
