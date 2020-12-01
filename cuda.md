@@ -14,6 +14,14 @@
 
 https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html
 
-* #### cuda toolkit     pytorch    torchvision 通过pip/conda安装
+* #### 安装pytorch with cuda support
 
-conda install pytorch==1.5.0 torchvision==0.6.0 cudatoolkit==10.1 -c [source (e.g. conda-forge)]
+conda install pytorch==1.5.0 torchvision==0.6.0 cudatoolkit==10.1 -c [source (e.g. pytorch)]
+
+验证是否安装成功：
+
+```python
+import torch
+print(torch.cuda.is_available())
+```
+
