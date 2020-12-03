@@ -18,6 +18,9 @@ https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html
 
 conda install pytorch==1.5.0 torchvision==0.6.0 cudatoolkit==10.1 -c [source (e.g. pytorch)]
 
+pytorch与cudatoolkit对应版本\
+https://pytorch.org/get-started/previous-versions/
+
 验证是否安装成功：
 
 ```python
