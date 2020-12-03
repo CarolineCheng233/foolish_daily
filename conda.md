@@ -5,7 +5,7 @@
 
 * 重命名环境 先复制再删除
 
-* 更新conda:
+* 更新conda:\
   conda update -n [name] conda
 
 * conda remove package          移除当前环境下的package包
