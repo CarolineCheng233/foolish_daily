@@ -28,3 +28,5 @@ import torch
 print(torch.cuda.is_available())
 ```
 
+如果使用的时候出现以下情况则cuda不可用：\
+No CUDA runtime is found, using CUDA_HOME='...'
