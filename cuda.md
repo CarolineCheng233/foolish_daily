@@ -6,7 +6,7 @@
 
   nvidia-smi
 
-* #### cuda toolkit version要与cuda runtime version兼容
+* #### cuda toolkit version要与cuda runtime version相同
 
 * #### cuda toolkit 与 cuda driver version的兼容性
 
