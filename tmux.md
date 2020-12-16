@@ -32,3 +32,14 @@
 * ctrl+b d        退出session
 
   exit/ctrl+d     终止ssession
+  
+* 启用鼠标
+1. 编辑文件 ~/.tmux.conf，在其中加入以下内容
+(for tmux -V > 2.1)  set-option -g mouse on
+(for tmux -V <= 2.1)
+setw -g mouse-resize-pane on
+setw -g mouse-select-pane on
+setw -g mouse-select-window on
+setw -g mode-mouse on
+2. 
+tmux source-file ~/.tmux.conf

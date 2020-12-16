@@ -56,6 +56,10 @@ def take():
     array2 = np.take(a=array, indices=idxes, axis=0)
 
 
+def stack():
+    pass
+
+
 def foo_numpy():
     choice()
     rand()
