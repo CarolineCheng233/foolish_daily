@@ -19,6 +19,11 @@ def rand():
     array2 = np.random.rand(1, 2, 3, 4, 5)  # shape:(1, 2, 3, 4, 5)
 
 
+def randn():
+    # gi
+    pass
+
+
 def random():
     # size: int or tuple
     # return random data in range [0.0, 1.0)
@@ -57,7 +62,7 @@ def take():
 
 
 def stack():
-    pass
+    np.stack()
 
 
 def foo_numpy():
