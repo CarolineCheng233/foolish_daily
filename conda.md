@@ -1,3 +1,8 @@
+* conda安装 \
+wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh \
+bash Anaconda3-2020.11-Linux-x86_64.sh \
+conda init 
+
 * conda create -n name python=3.8          创建环境并制定python版本
 
 * conda remove -n name --all               删除环境
