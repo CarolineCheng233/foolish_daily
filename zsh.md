@@ -15,9 +15,9 @@
    wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh  \
     -O - 表示在终端展示文件内容
 
-6. 修改oh-my-zsh的主题 \
+6. (option)修改oh-my-zsh的主题 \
    查看已有主题 ls \~/.oh-my-zsh/themes  \
-    在~/.zshrc中修改 ZSH_THEME=“ys”  \
+    在~/.zshrc中修改 ZSH_THEME=“ys”  或其他主题\
      source ~/.zshrc 使其生效
 
 7. 安装oh-my-zsh插件
