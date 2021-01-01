@@ -2,56 +2,72 @@
     
 ```shell
     cat /etc/shells
-    ```
+```    
     
 2. 若无，安装zsh
-    
+
 ```shell
     sudo apt-get install zsh
-    ```
-    
-3. 更改默认shell为zsh  \
-    
-    ```shell 
-sudo chsh -s $(which zsh)
-    ```
-    
-    退出登录使修改生效
-    
-4. 查看默认shell  \
-    
+```
+
+3. 更改默认shell为zsh
+
+```shell 
+    sudo chsh -s $(which zsh)
+```
+
+   退出登录使修改生效
+
+4. 查看默认shell
+
 ```shell
     echo $SHELL
-    ```
-    
-5. 安装oh my zsh  \
-   wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh  \
-    -O - 表示在终端展示文件内容
+```
 
-6. (option)修改oh-my-zsh的主题 \
-   查看已有主题 ls \~/.oh-my-zsh/themes  \
-    在~/.zshrc中修改 ZSH_THEME=“ys”  或其他主题\
-     source ~/.zshrc 使其生效
+5. 安装oh my zsh
+
+```shell
+    wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+```    
+   -O - 表示在终端展示文件内容
+
+6. (option)修改oh-my-zsh的主题\
+   查看已有主题
+```shell
+    ls ~/.oh-my-zsh/themes
+```
+   在~/.zshrc中修改 ZSH_THEME=“ys”  或其他主题
+```shell
+     source ~/.zshrc
+```
 
 7. 安装oh-my-zsh插件
 
+```shell
    cd ~/.oh-my-zsh/custom/plugins/
-
-   * zsh-syntax-highlighting  使语法高亮 \
-     git clone https://github.com/zsh-users/zsh-syntax-highlighting \
-      在~/.zshrc里找到 plugins=(git) ，在括号里加入zsh-syntax-highlighting
+```
+   * zsh-syntax-highlighting  使语法高亮
+```shell
+     git clone https://github.com/zsh-users/zsh-syntax-highlighting
+```
+   在~/.zshrc里找到 plugins=(git) ，在括号里加入zsh-syntax-highlighting
 
    * autojump 不用输入完整路径即能跳转到文件目录 j dir \
-     必须是之前cd过才能自动跳转 \
-     git clone https://github.com/wting/autojump  \
-     cd autojump; sh install.py \
-     重启终端 \
-     在~/.zshrc里加入如下命令 \
+     必须是之前cd过才能自动跳转
+```shell
+     git clone https://github.com/wting/autojump
+     cd autojump; sh install.py
+```
+   重启终端 \
+   在~/.zshrc里加入如下命令
+```shell
      [[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
-
-   * zsh-autosuggestions  命令自动补全 \
-     git clone https://github.com/zsh-users/zsh-autosuggestions \
-     在~/.zshrc里加入 plugins=(* zsh-autosuggestions)
+```
+   * zsh-autosuggestions  命令自动补全
+```shell
+     git clone https://github.com/zsh-users/zsh-autosuggestions
+```
+   在~/.zshrc里加入 plugins=(* zsh-autosuggestions)
 
      
 
