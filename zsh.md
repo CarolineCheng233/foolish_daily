@@ -1,16 +1,29 @@
-1. 查看系统中有无zsh\
+1. 查看系统中有无zsh
+    
+```shell
     cat /etc/shells
-
-2. 若无，安装zsh  \
+    ```
+    
+2. 若无，安装zsh
+    
+```shell
     sudo apt-get install zsh
-
+    ```
+    
 3. 更改默认shell为zsh  \
-    sudo chsh -s $(which zsh)  \
+    
+    ```shell 
+sudo chsh -s $(which zsh)
+    ```
+    
     退出登录使修改生效
-
+    
 4. 查看默认shell  \
+    
+```shell
     echo $SHELL
-
+    ```
+    
 5. 安装oh my zsh  \
    wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh  \
     -O - 表示在终端展示文件内容
