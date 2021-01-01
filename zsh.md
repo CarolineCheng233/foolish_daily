@@ -16,7 +16,7 @@
     -O - 表示在终端展示文件内容
 
 6. 修改oh-my-zsh的主题 \
-   查看已有主题 ls ~/.oh-my-zsh/themes  \
+   查看已有主题 ls \~/.oh-my-zsh/themes  \
     在~/.zshrc中修改 ZSH_THEME=“ys”  \
      source ~/.zshrc 使其生效
 
