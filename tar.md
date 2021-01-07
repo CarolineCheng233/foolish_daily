@@ -12,6 +12,7 @@ tar -[parameter]：打包/压缩文件
 
 e.g.
 
+```shell
 tar -czvf test.tar.gz cur_dir   压缩成gzip的格式，显示处理过程中的文件名
 
 tar -xzvf test.tar.gz 解压缩文件到当前目录
@@ -19,3 +20,4 @@ tar -xzvf test.tar.gz 解压缩文件到当前目录
 tar -xzvf test.tar.gz -C /etc 解压缩到/etc目录
 
 tar -xzvf test.tar.gz etc/udev 仅解压缩tar文件里的etc/udev目录
+```

@@ -1,10 +1,13 @@
 * #### 查看cuda runtime version
-
-  nvcc --version
-
+```shell script
+   nvcc --version
+```
+  
 * #### 查看cuda driver version
+```shell script
+   nvidia-smi
+```
 
-  nvidia-smi
 
 * #### cuda toolkit version要与cuda runtime version相同
 
@@ -15,8 +18,9 @@
 https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html
 
 * #### 安装pytorch with cuda support
-
-conda install pytorch==1.5.0 torchvision==0.6.0 cudatoolkit==10.1 -c [source (e.g. pytorch)]
+```shell script
+   conda install pytorch==1.5.0 torchvision==0.6.0 cudatoolkit==10.1 -c [source (e.g. pytorch)]
+```
 
 pytorch与cudatoolkit对应版本\
 https://pytorch.org/get-started/previous-versions/

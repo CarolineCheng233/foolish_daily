@@ -4,8 +4,10 @@
 
 e.g.  
 
+```shell script
 chmod -R u+x direc
 
 chmod g-w file
 
 chmod 664 file   (664:  rw-rw-r--)
+```

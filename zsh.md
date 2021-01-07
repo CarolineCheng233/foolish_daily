@@ -56,7 +56,7 @@
      必须是之前cd过才能自动跳转
 ```shell
      git clone https://github.com/wting/autojump
-     cd autojump; sh install.py
+     cd autojump; python install.py
 ```
    重启终端 \
    在~/.zshrc里加入如下命令
