@@ -1,3 +1,4 @@
+有sudo权限安装zsh:
 1. 查看系统中有无zsh
     
 ```shell
@@ -23,6 +24,22 @@
 ```shell
     echo $SHELL
 ```
+
+无sudo权限安装zsh:
+```shell
+   reference: https://github.com/innerlee/setup
+```
+如果在安装过程中出现错误，可去掉安装失败的部分，如下图所示是我将安装目录~/app/zsh/src/Makefile文件修改的部分
+![cuda_version](sup/zsh_Makefile.png)
+同时也要修改zzzsh.sh文件，make命令会重新生成Makefile文件，所以要将其注释掉
+![cuda_version](sup/zzzsh.png)
+
+执行命令
+```shell script
+echo '[ -f $HOME/app/bin/zsh ] && exec $HOME/app/bin/zsh -l' >> ~/.bash_profile
+echo '[ -f $HOME/app/bin/zsh ] && exec $HOME/app/bin/zsh -l' >> ~/.bashrc
+```
+无需source ~/.bashrc或退出登录
 
 5. 安装oh my zsh
 
