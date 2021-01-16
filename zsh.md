@@ -70,7 +70,7 @@ echo '[ -f $HOME/app/bin/zsh ] && exec $HOME/app/bin/zsh -l' >> ~/.bashrc
 ```shell
      git clone https://github.com/zsh-users/zsh-syntax-highlighting
 ```
-   在~/.zshrc里找到 plugins=(git) ，在括号里加入zsh-syntax-highlighting
+   在~/.zshrc里找到 plugins=(git) ，在括号里加入zsh-syntax-highlighting(不要加逗号，以空格隔开)
 
    * autojump 不用输入完整路径即能跳转到文件目录 j dir \
      必须是之前cd过才能自动跳转
