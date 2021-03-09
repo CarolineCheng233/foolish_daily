@@ -40,9 +40,9 @@
 echo '[ -f $HOME/app/bin/zsh ] && exec $HOME/app/bin/zsh -l' >> ~/.bash_profile
 echo '[ -f $HOME/app/bin/zsh ] && exec $HOME/app/bin/zsh -l' >> ~/.bashrc
 ```
-这两行命令的作用是启动zsh，chsh也是启动zsh，但是它会在/etc/shells里面找，需要root权限
+这两行命令的作用是启动zsh，chsh也是启动zsh，但是它会在/etc/shells里面找，chsh这个命令需要root权限，而如上两行不需要
 
-无需source ~/.bashrc或退出登录
+修改完后重新登录或者source ~/.bashrc
 
 5. 安装oh my zsh
 
