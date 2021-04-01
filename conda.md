@@ -15,3 +15,23 @@ conda remove -n name package             移除name环境下的package包
 ```
 
 * 重命名环境 先复制再删除
+
+* conda 查看源
+```shell script
+conda config --show-sources
+```
+
+* conda 添加清华源
+```shell script
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/msys2/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/bioconda/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/menpo/
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+```
+
+* 更新库
+```shell script
+conda update --all
+```
+
