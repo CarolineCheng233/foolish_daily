@@ -23,5 +23,21 @@ if __name__ == '__main__':
   | DataParallel            | easy to use, only one more step | single-process multi_threads, may cause GIL contentions | single-machine multiple-gpus                                 |
   | DistributedDataParallel | one more step to DataParallel   |                                                         | single-machine multiple-gpus or multiple-machines multiple-gpus |
 
-  
-  
+* DP example
+```python
+import torch.nn as nn
+import torch
+
+
+def Model(nn.Model):
+    def __init__(self):
+        pass
+
+
+model = Model()
+model = nn.DataParallel(model)
+device = torch.device("cuda:0")
+model.to(device)
+input = data.to(device)
+output = model(input)
+```
