@@ -21,7 +21,7 @@ if __name__ == '__main__':
   | name                    | advantage                       | disadvantage                                            | applicable scene                                             |
   | ----------------------- | ------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------ |
   | DataParallel            | easy to use, only one more step | single-process multi_threads, may cause GIL contentions | single-machine multiple-gpus                                 |
-  | DistributedDataParallel | one more step to DataParallel   |                                                         | single-machine multiple-gpus or multiple-machines multiple-gpus |
+  | DistributedDataParallel | one more step to DataParallel   |                                                         | single-machine multiple-gpus or multiple-machines multiple-gpus, and multi-gpu model |
 
 * DP example
 ```python
