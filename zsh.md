@@ -16,6 +16,11 @@
 ```shell 
     sudo chsh -s $(which zsh)
 ```
+或
+```shell script
+    echo '[ -f $ZSH_PATH ] && exec $ZSH_PATH -l' >> ~/.bash_profile
+    echo '[ -f $ZSH_PATH ] && exec $ZSH_PATH -l' >> ~/.bashrc
+```
 
    退出登录使修改生效
 
