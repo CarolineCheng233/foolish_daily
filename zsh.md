@@ -98,3 +98,10 @@ echo '[ -f $HOME/app/bin/zsh ] && exec $HOME/app/bin/zsh -l' >> ~/.bashrc
 
 #### 安装完以后别忘记将~/.bashrc里的各种环境变量迁移过来，例如anaconda初始化
 
+
+
+* 设置zsh下tmux环境命令提示亮度 \
+在zshrc下 添加 
+```shell script
+export TERM=xterm-256color
+```
