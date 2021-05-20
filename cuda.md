@@ -21,6 +21,9 @@ https://docs.nvidia.com/cuda/cuda-toolkit-release-notes/index.html
 ```shell script
    conda install pytorch==1.5.0 torchvision==0.6.0 cudatoolkit=10.1 -c [source (e.g. pytorch)]
 ```
+手动下载whl安装: 到网页 https://download.pytorch.org/whl/torch_stable.html  找到合适的版本(pytorch版本与toolkit对应版本关系见下面)
+下载了torchvision和pytorch之后，先pip install torchvision，然后安装pytorch
+
 
 pytorch与cudatoolkit对应版本\
 https://pytorch.org/get-started/previous-versions/
