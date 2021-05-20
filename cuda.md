@@ -37,3 +37,6 @@ print(torch.cuda.is_available())
 
 如果使用的时候出现以下情况则cuda不可用：\
 No CUDA runtime is found, using CUDA_HOME='...'
+
+
+注意升级完后要升级一下依赖pytorch版本的包，比如mmcv
