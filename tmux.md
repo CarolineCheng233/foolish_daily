@@ -95,3 +95,8 @@ setw -g mode-mouse on
 ```shell
 tmux source-file ~/.tmux.conf
 ```
+
+* 提示浅色显示
+```shell script
+
+```
