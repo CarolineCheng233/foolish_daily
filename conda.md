@@ -5,6 +5,11 @@ bash Anaconda3-2020.11-Linux-x86_64.sh
 conda init
 ```
 
+* 使用官网上最新的安装包
+```shell script
+https://www.anaconda.com/products/individual#Downloads
+```
+
 ```shell script
 conda create -n name python=3.8          创建环境并制定python版本
 conda remove -n name --all               删除环境
