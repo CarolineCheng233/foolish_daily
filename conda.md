@@ -41,3 +41,9 @@ conda config --add channels https://mirrors.ustc.edu.cn/anaconda/cloud/menpo/
 conda update --all
 ```
 
+* 删除源
+```shell script
+删除单个源 conda config --remove channels https://... 
+删除所有源换回默认源 conda config --remove-key channels
+```
+
