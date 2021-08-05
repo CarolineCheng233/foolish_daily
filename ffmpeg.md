@@ -9,5 +9,5 @@ ERROR: x265 not found using pkg-config
 ```
 额外再安装pkg-config
 ```shell script
-apt-get install -y pkg-config
+sudo apt-get install -y pkg-config
 ```
