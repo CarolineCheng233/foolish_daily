@@ -22,3 +22,7 @@ pip install xxx -i https://pypi.mirrors.ustc.edu.cn/simple/ --trusted-host pypi.
 index-url = http://pypi.douban.com/simple/
 trusted-host = pypi.douban.com
 ```
+
+by the way,我因为tensorflow的安装需要将python版本从3.8降到3.7之后,使用pip出了问题.
+目前还不清楚是什么原因,可能是urllib3的版本太高导致的,要降到1.25.8及以下
+pip安装的时候还得使用豆瓣源以及加上--trusted-host参数
