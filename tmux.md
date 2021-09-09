@@ -96,7 +96,7 @@ setw -g mode-mouse on
 tmux source-file ~/.tmux.conf
 ```
 
-* 提示浅色显示
+* zsh autosuggestions提示浅色显示
 ```shell script
-
+编辑~/.tmux.conf文件 set -g default-terminal "screen-256color"
 ```
