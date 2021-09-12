@@ -100,3 +100,10 @@ tmux source-file ~/.tmux.conf
 ```shell script
 编辑~/.tmux.conf文件 set -g default-terminal "screen-256color"
 ```
+
+* 取消窗口自动命名，在~/.tmux.conf文件中添加以下内容
+```shell script
+set-option -g allow-rename off
+set -g status-keys vi
+set -g history-limit 10000
+```
