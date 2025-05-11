@@ -20,3 +20,14 @@ LxRunOffline.exe move -n <WSL name> -d <file_path>
 ```
 
 似乎迁移磁盘之后能够解除wsl挂载磁盘的写保护==之前碰到一个问题是wsl原来的挂载盘在C盘，C盘快满了的时候wsl磁盘被写保护，一直解决不了这个问题，索性迁移了磁盘之后写保护被自动解除了==
+
+
+* 使用主机vpn
+1. 设置https_proxy, http_proxy为windows的ip地址
+```shell script
+export hostip=$(ip route | grep default | awk '{print $3}')
+export https_proxy="http://${hostip}:7890"
+export http_proxy="http://${hostip}:7890"
+export all_proxy="socks5://${hostip}:7890"
+```
+2. 主机vpn打开"允许局域网连接"
