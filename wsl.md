@@ -31,3 +31,4 @@ export http_proxy="http://${hostip}:7890"
 export all_proxy="socks5://${hostip}:7890"
 ```
 2. 主机vpn打开"允许局域网连接"
+3. windows防火墙设置入站规则-端口-允许7890连接
